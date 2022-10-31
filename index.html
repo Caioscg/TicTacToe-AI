@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+</head>
+<body>
+    <img src="assets/background.jpg" alt="">
+    <h1>Jogo da Velha PvE</h1>
+    <div id="top">
+        <span class="left"><p></p></span>
+        <span class="mid"><p></p></span>
+        <span class="right"><p></p></span>
+    </div>
+    <div id="mid">
+        <span class="left"><p></p></span>
+        <span class="mid"><p></p></span>
+        <span class="right"><p></p></span>
+    </div>
+    <div id="bottom">
+        <span class="left"><p></p></span>
+        <span class="mid"><p></p></span>
+        <span class="right"><p></p></span>
+    </div>
+
+    <div id="black">
+        <strong id="winx">Azul venceu!!</strong>
+        <strong id="wino">Vermelho venceu!!</strong>
+        <strong id="draw">Deu velha!!</strong>
+    </div>
+    <button>Jogar novamente</button>
+
+    <table class="score" style="border: 10px solid black;">
+        <caption class ="title" style="font-size: 40px; background-color: wheat; border: 10px solid;">Placar</caption>
+
+        <colgroup>
+            <col style="background-color: blue;">
+            <col style="background-color: red;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th style="width: 120px;">Você</th>
+                <th style="width: 120px;">Computador</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th><p id="blue-score">0</p></th>
+                <th><p id="red-score">0</p></th>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <footer>Author: Caio Gonzaga</footer>
+    <script src="main.js"></script>
+</body>
+</html>
