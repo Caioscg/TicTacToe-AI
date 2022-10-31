@@ -1,7 +1,5 @@
 # Hash game PvE
 
-play hash game against the computer, it's winnable but not that easy!
+play tic tac toe against the AI, it's winnable but not that easy!
 
-site : https://hash-game-pve.vercel.app
-
-aaaa
+site : https://tictactoe-1p.vercel.app
