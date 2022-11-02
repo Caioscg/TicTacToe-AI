@@ -71,56 +71,9 @@ topLeft.addEventListener("click", () => {
         setTimeout(winO, 500)
         return
     }
-    if (TM === "X" && TR != "O") {
-        setTimeout(() => {
-            topRightSymbol.textContent = "O"
-            topRightSymbol.style.color = "red"
-            TR = "O"
-            o++;
-        }, 500)
+    if (pcChecksPlayerVictory() === 1) {     
     }
-    else if (TR === "X" && TM != "O") {
-        setTimeout(() => {
-            topMidSymbol.textContent = "O"
-            topMidSymbol.style.color = "red"
-            TM = "O"
-            o++;
-        }, 500)
-    }
-    else if (ML === "X" && BL != "O") {
-        setTimeout(() => {
-            bottomLeftSymbol.textContent = "O"
-            bottomLeftSymbol.style.color = "red"
-            BL = "O"
-            o++;
-        }, 500)
-    }
-    else if (BL === "X" && ML != "O") {
-        setTimeout(() => {
-            midLeftSymbol.textContent = "O"
-            midLeftSymbol.style.color = "red"
-            ML = "O"
-            o++;
-        }, 500)
-    }
-    else if (MM === "X" && BR != "O") {
-        setTimeout(() => {
-            bottomRightSymbol.textContent = "O"
-            bottomRightSymbol.style.color = "red"
-            BR = "O"
-            o++;
-        }, 500)
-    }
-    else if (BR === "X" && MM != "O") {
-        setTimeout(() => {
-            midMidSymbol.textContent = "O"
-            midMidSymbol.style.color = "red"
-            MM = "O"
-            o++;
-        }, 500)
-    }
-    else {
-        pcConstructVictory()
+    else if (pcConstructVictory() === 1) {
     }
     setTimeout(verifyComputerWin, 500)
 })
@@ -152,40 +105,9 @@ topMid.addEventListener("click", () => {
         setTimeout(winO, 500)
         return
     }
-    if (TL === "X" && TR != "O") {
-        setTimeout(() => {
-            topRightSymbol.textContent = "O"
-            topRightSymbol.style.color = "red"
-            TR = "O"
-            o++;
-        }, 500)
+    if (pcChecksPlayerVictory() === 1) {     
     }
-    else if (TR === "X" && TL != "O") {
-        setTimeout(() => {
-            topLeftSymbol.textContent = "O"
-            topLeftSymbol.style.color = "red"
-            TL = "O"
-            o++;
-        }, 500)
-    }
-    else if (MM === "X" && BM != "O") {
-        setTimeout(() => {
-            bottomMidSymbol.textContent = "O"
-            bottomMidSymbol.style.color = "red"
-            BM = "O"
-            o++;
-        }, 500)
-    }
-    else if (BM === "X" && MM != "O") {
-        setTimeout(() => {
-            midMidSymbol.textContent = "O"
-            midMidSymbol.style.color = "red"
-            MM = "O"
-            o++;
-        }, 500)
-    }
-    else {
-        pcConstructVictory()
+    else if (pcConstructVictory() === 1) {
     }
     setTimeout(verifyComputerWin, 500)
 })
@@ -217,56 +139,9 @@ topRight.addEventListener("click", () => {
         setTimeout(winO, 500)
         return
     }
-    if (TL === "X" && TM != "O") {
-        setTimeout(() => {
-            topMidSymbol.textContent = "O"
-            topMidSymbol.style.color = "red"
-            TM = "O"
-            o++;
-        }, 500)
+    if (pcChecksPlayerVictory() === 1) {     
     }
-    else if (TM === "X" && TL != "O") {
-        setTimeout(() => {
-            topLeftSymbol.textContent = "O"
-            topLeftSymbol.style.color = "red"
-            TL = "O"
-            o++;
-        }, 500)
-    }
-    else if (MR === "X" && BR != "O") {
-        setTimeout(() => {
-            bottomRightSymbol.textContent = "O"
-            bottomRightSymbol.style.color = "red"
-            BR = "O"
-            o++;
-        }, 500)
-    }
-    else if (BR === "X" && MR != "O") {
-        setTimeout(() => {
-            midRightSymbol.textContent = "O"
-            midRightSymbol.style.color = "red"
-            MR = "O"
-            o++;
-        }, 500)
-    }
-    else if (MM === "X" && BL != "O") {
-        setTimeout(() => {
-            bottomLeftSymbol.textContent = "O"
-            bottomLeftSymbol.style.color = "red"
-            BL = "O"
-            o++;
-        }, 500)
-    }
-    else if (BL === "X" && MM != "O") {
-        setTimeout(() => {
-            midMidSymbol.textContent = "O"
-            midMidSymbol.style.color = "red"
-            MM = "O"
-            o++;
-        }, 500)
-    }
-    else {
-        pcConstructVictory()
+    else if (pcConstructVictory() === 1) {
     }
     setTimeout(verifyComputerWin, 500)
 })
@@ -283,7 +158,7 @@ midLeft.addEventListener("click", () => {
             while (o === 0) {
                 getRandom()
             }
-        }, 300)
+        }, 500)
         return
     }
     if (MM === "X" && MR === "X" || TL === "X" && BL === "X") {
@@ -298,40 +173,9 @@ midLeft.addEventListener("click", () => {
         setTimeout(winO, 500)
         return
     }
-    if (TL === "X" && BL != "O") {
-        setTimeout(() => {
-            bottomLeftSymbol.textContent = "O"
-            bottomLeftSymbol.style.color = "red"
-            BL = "O"
-            o++;
-        }, 500)
+    if (pcChecksPlayerVictory() === 1) {     
     }
-    else if (BL === "X" && TL != "O") {
-        setTimeout(() => {
-            topLeftSymbol.textContent = "O"
-            topLeftSymbol.style.color = "red"
-            TL = "O"
-            o++;
-        }, 500)
-    }
-    else if (MM === "X" && MR != "O") {
-        setTimeout(() => {
-            midRightSymbol.textContent = "O"
-            midRightSymbol.style.color = "red"
-            MR = "O"
-            o++;
-        }, 500)
-    }
-    else if (MR === "X" && MM != "O") {
-        setTimeout(() => {
-            midMidSymbol.textContent = "O"
-            midMidSymbol.style.color = "red"
-            MM = "O"
-            o++;
-        }, 500)
-    }
-    else {
-        pcConstructVictory()
+    else if (pcConstructVictory() === 1) {
     }
     setTimeout(verifyComputerWin, 500)
 })
@@ -363,72 +207,9 @@ midMid.addEventListener("click", () => {
         setTimeout(winO, 500)
         return
     }
-    if (TL === "X" && BR != "O") {
-        setTimeout(() => {
-            bottomRightSymbol.textContent = "O"
-            bottomRightSymbol.style.color = "red"
-            BR = "O"
-            o++;
-        }, 500)
+    if (pcChecksPlayerVictory() === 1) {     
     }
-    else if (BR === "X" && TL != "O") {
-        setTimeout(() => {
-            topLeftSymbol.textContent = "O"
-            topLeftSymbol.style.color = "red"
-            TL = "O"
-            o++;
-        }, 500)
-    }
-    else if (TR === "X" && BL != "O") {
-        setTimeout(() => {
-            bottomLeftSymbol.textContent = "O"
-            bottomLeftSymbol.style.color = "red"
-            BL = "O"
-            o++;
-        }, 500)
-    }
-    else if (BL === "X" && TR != "O") {
-        setTimeout(() => {
-            topRightSymbol.textContent = "O"
-            topRightSymbol.style.color = "red"
-            TR = "O"
-            o++;
-        }, 500)
-    }
-    else if (ML === "X" && MR != "O") {
-        setTimeout(() => {
-            midRightSymbol.textContent = "O"
-            midRightSymbol.style.color = "red"
-            MR = "O"
-            o++;
-        }, 500)
-    }
-    else if (MR === "X" && ML != "O") {
-        setTimeout(() => {
-            midLeftSymbol.textContent = "O"
-            midLeftSymbol.style.color = "red"
-            ML = "O"
-            o++;
-        }, 500)
-    }
-    else if (TM === "X" && BM != "O") {
-        setTimeout(() => {
-            bottomMidSymbol.textContent = "O"
-            bottomMidSymbol.style.color = "red"
-            BM = "O"
-            o++;
-        }, 500)
-    }
-    else if (BM === "X" && TM != "O") {
-        setTimeout(() => {
-            topMidSymbol.textContent = "O"
-            topMidSymbol.style.color = "red"
-            TM = "O"
-            o++;
-        }, 500)
-    }
-    else {
-        pcConstructVictory()
+    else if (pcConstructVictory() === 1) {
     }
     setTimeout(verifyComputerWin, 500)
 })
@@ -460,40 +241,9 @@ midRight.addEventListener("click", () => {
         setTimeout(winO, 500)
         return
     }
-    if (TR === "X" && BR != "O") {
-        setTimeout(() => {
-            bottomRightSymbol.textContent = "O"
-            bottomRightSymbol.style.color = "red"
-            BR = "O"
-            o++;
-        }, 500)
+    if (pcChecksPlayerVictory() === 1) {     
     }
-    else if (BR === "X" && TR != "O") {
-        setTimeout(() => {
-            topRightSymbol.textContent = "O"
-            topRightSymbol.style.color = "red"
-            TR = "O"
-            o++;
-        }, 500)
-    }
-    else if (MM === "X" && ML != "O") {
-        setTimeout(() => {
-            midLeftSymbol.textContent = "O"
-            midLeftSymbol.style.color = "red"
-            ML = "O"
-            o++;
-        }, 500)
-    }
-    else if (ML === "X" && MM != "O") {
-        setTimeout(() => {
-            midMidSymbol.textContent = "O"
-            midMidSymbol.style.color = "red"
-            MM = "O"
-            o++;
-        }, 500)
-    }
-    else {
-        pcConstructVictory()
+    else if (pcConstructVictory() === 1) {
     }
     setTimeout(verifyComputerWin, 500)
 })
@@ -525,56 +275,9 @@ bottomLeft.addEventListener("click", () => {
         setTimeout(winO, 500)
         return
     }
-    if (ML === "X" && TL != "O") {
-        setTimeout(() => {
-            topLeftSymbol.textContent = "O"
-            topLeftSymbol.style.color = "red"
-            TL = "O"
-            o++;
-        }, 500)
+    if (pcChecksPlayerVictory() === 1) {     
     }
-    else if (TL === "X" && ML != "O") {
-        setTimeout(() => {
-            midLeftSymbol.textContent = "O"
-            midLeftSymbol.style.color = "red"
-            ML = "O"
-            o++;
-        }, 500)
-    }
-    else if (BM === "X" && BR != "O") {
-        setTimeout(() => {
-            bottomRightSymbol.textContent = "O"
-            bottomRightSymbol.style.color = "red"
-            BR = "O"
-            o++;
-        }, 500)
-    }
-    else if (BR === "X" && BM != "O") {
-        setTimeout(() => {
-            bottomMidSymbol.textContent = "O"
-            bottomMidSymbol.style.color = "red"
-            BM = "O"
-            o++;
-        }, 500)
-    }
-    else if (MM === "X" && TR != "O") {
-        setTimeout(() => {
-            topRightSymbol.textContent = "O"
-            topRightSymbol.style.color = "red"
-            TR = "O"
-            o++;
-        }, 500)
-    }
-    else if (TR === "X" && MM != "O") {
-        setTimeout(() => {
-            midMidSymbol.textContent = "O"
-            midMidSymbol.style.color = "red"
-            MM = "O"
-            o++;
-        }, 500)
-    }
-    else {
-        pcConstructVictory()
+    else if (pcConstructVictory() === 1) {
     }
     setTimeout(verifyComputerWin, 500)
 })
@@ -606,40 +309,9 @@ bottomMid.addEventListener("click", () => {
         setTimeout(winO, 500)
         return
     }
-    if (MM === "X" && TM != "O") {
-        setTimeout(() => {
-            topMidSymbol.textContent = "O"
-            topMidSymbol.style.color = "red"
-            TM = "O"
-            o++;
-        }, 500)
+    if (pcChecksPlayerVictory() === 1) {     
     }
-    else if (TM === "X" && MM != "O") {
-        setTimeout(() => {
-            midMidSymbol.textContent = "O"
-            midMidSymbol.style.color = "red"
-            MM = "O"
-            o++;
-        }, 500)
-    }
-    else if (BL === "X" && BR != "O") {
-        setTimeout(() => {
-            bottomRightSymbol.textContent = "O"
-            bottomRightSymbol.style.color = "red"
-            BR = "O"
-            o++;
-        }, 500)
-    }
-    else if (BR === "X" && BL != "O") {
-        setTimeout(() => {
-            bottomLeftSymbol.textContent = "O"
-            bottomLeftSymbol.style.color = "red"
-            BL = "O"
-            o++;
-        }, 500)
-    }
-    else {
-        pcConstructVictory()
+    else if (pcConstructVictory() === 1) {
     }
     setTimeout(verifyComputerWin, 500)
 })
@@ -671,56 +343,9 @@ bottomRight.addEventListener("click", () => {
         setTimeout(winO, 500)
         return
     }
-    if (MR === "X" && TR != "O") {
-        setTimeout(() => {
-            topRightSymbol.textContent = "O"
-            topRightSymbol.style.color = "red"
-            TR = "O"
-            o++;
-        }, 500)
+    if (pcChecksPlayerVictory() === 1) {     
     }
-    else if (TR === "X" && MR != "O") {
-        setTimeout(() => {
-            midRightSymbol.textContent = "O"
-            midRightSymbol.style.color = "red"
-            MR = "O"
-            o++;
-        }, 500)
-    }
-    else if (BM === "X" && BL != "O") {
-        setTimeout(() => {
-            bottomLeftSymbol.textContent = "O"
-            bottomLeftSymbol.style.color = "red"
-            BL = "O"
-            o++;
-        }, 500)
-    }
-    else if (BL === "X" && BM != "O") {
-        setTimeout(() => {
-            bottomMidSymbol.textContent = "O"
-            bottomMidSymbol.style.color = "red"
-            BM = "O"
-            o++;
-        }, 500)
-    }
-    else if (MM === "X" && TL != "O") {
-        setTimeout(() => {
-            topLeftSymbol.textContent = "O"
-            topLeftSymbol.style.color = "red"
-            TL = "O"
-            o++;
-        }, 500)
-    }
-    else if (TL === "X" && MM != "O") {
-        setTimeout(() => {
-            midMidSymbol.textContent = "O"
-            midMidSymbol.style.color = "red"
-            MM = "O"
-            o++;
-        }, 500)
-    }
-    else {
-        pcConstructVictory()
+    else if (pcConstructVictory() === 1) {
     }
     setTimeout(verifyComputerWin, 500)
 })
@@ -1240,5 +865,226 @@ function pcConstructVictory() {
             o++;
         }, 500)
     }
-    else setTimeout(getRandom, 500)
+    else {
+        setTimeout(getRandom, 500)
+    }
+}
+
+function pcChecksPlayerVictory() {
+    if (TM === "X" && TR === "X" && TL != "O") {
+        setTimeout(() => {
+            topLeftSymbol.textContent = "O"
+            topLeftSymbol.style.color = "red"
+            o++;
+            TL = "O"
+        }, 500)
+        return 1;
+    }
+    else if (ML === "X" && BL === "X" && TL != "O") {
+        setTimeout(() => {
+            topLeftSymbol.textContent = "O"
+            topLeftSymbol.style.color = "red"
+            o++;
+            TL = "O"
+        }, 500)
+        return 1;
+    }
+    else if (MM === "X" && BR === "X" && TL != "O") {
+        setTimeout(() => {
+            topLeftSymbol.textContent = "O"
+            topLeftSymbol.style.color = "red"
+            o++;
+            TL = "O"
+        }, 500)
+        return 1;
+    }
+    else if (TL === "X" && TR === "X" && TM != "O") {
+        setTimeout(() => {
+            topMidSymbol.textContent = "O"
+            topMidSymbol.style.color = "red"
+            o++;
+            TM = "O"
+        }, 500)
+        return 1;
+    }
+    else if (BM === "X" && MM === "X" && TM != "O") {
+        setTimeout(() => {
+            topMidSymbol.textContent = "O"
+            topMidSymbol.style.color = "red"
+            o++;
+            TM = "O"
+        }, 500)
+        return 1;
+    }
+    else if (TL === "X" && TM === "X" && TR != "O") {
+        setTimeout(() => {
+            topRightSymbol.textContent = "O"
+            topRightSymbol.style.color = "red"
+            o++;
+            TR = "O"
+        }, 500)
+        return 1;
+    }
+    else if (MR === "X" && BR === "X" && TR != "O") {
+        setTimeout(() => {
+            topRightSymbol.textContent = "O"
+            topRightSymbol.style.color = "red"
+            o++;
+            TR = "O"
+        }, 500)
+        return 1;
+    }
+    else if (MM === "X" && BL === "X" && TR != "O") {
+        setTimeout(() => {
+            topRightSymbol.textContent = "O"
+            topRightSymbol.style.color = "red"
+            o++;
+            TR = "O"
+        }, 500)
+        return 1;
+    }
+    else if (MM === "X" && MR === "X" && ML != "O") {
+        setTimeout(() => {
+            midLeftSymbol.textContent = "O"
+            midLeftSymbol.style.color = "red"
+            o++;
+            ML = "O"
+        }, 500)
+        return 1;
+    }
+    else if (TL === "X" && BL === "X" && ML != "O") {
+        setTimeout(() => {
+            midLeftSymbol.textContent = "O"
+            midLeftSymbol.style.color = "red"
+            o++;
+            ML = "O"
+        }, 500)
+        return 1;
+    }
+    else if (ML === "X" && MR === "X" && MM != "O") {
+        setTimeout(() => {
+            midMidSymbol.textContent = "O"
+            midMidSymbol.style.color = "red"
+            o++;
+            MM = "O"
+        }, 500)
+        return 1;
+    }
+    else if (TM === "X" && BM === "X" && MM != "O") {
+        setTimeout(() => {
+            midMidSymbol.textContent = "O"
+            midMidSymbol.style.color = "red"
+            o++;
+            MM = "O"
+        }, 500)
+        return 1;
+    }
+    else if (BL === "X" && TR === "X" && MM != "O") {
+        setTimeout(() => {
+            midMidSymbol.textContent = "O"
+            midMidSymbol.style.color = "red"
+            o++;
+            MM = "O"
+        }, 500)
+        return 1;
+    }
+    else if (BR === "X" && TL === "X" && MM != "O") {
+        setTimeout(() => {
+            midMidSymbol.textContent = "O"
+            midMidSymbol.style.color = "red"
+            o++;
+            MM = "O"
+        }, 500)
+        return 1;
+    }
+    else if (ML === "X" && MM === "X" && MR != "O") {
+        setTimeout(() => {
+            midRightSymbol.textContent = "O"
+            midRightSymbol.style.color = "red"
+            o++;
+            MR = "O"
+        }, 500)
+        return 1;
+    }
+    else if (TR === "X" && BR === "X" && MR != "O") {
+        setTimeout(() => {
+            midRightSymbol.textContent = "O"
+            midRightSymbol.style.color = "red"
+            o++;
+            MR = "O"
+        }, 500)
+        return 1;
+    }
+    else if (BM === "X" && BR === "X" && BL != "O") {
+        setTimeout(() => {
+            bottomLeftSymbol.textContent = "O"
+            bottomLeftSymbol.style.color = "red"
+            o++;
+            BL = "O"
+        }, 500)
+        return 1;
+    }
+    else if (TL === "X" && ML === "X" && BL != "O") {
+        setTimeout(() => {
+            bottomLeftSymbol.textContent = "O"
+            bottomLeftSymbol.style.color = "red"
+            o++;
+            BL = "O"
+        }, 500)
+        return 1;
+    }
+    else if (MM === "X" && TR === "X" && BL != "O") {
+        setTimeout(() => {
+            bottomLeftSymbol.textContent = "O"
+            bottomLeftSymbol.style.color = "red"
+            o++;
+            BL = "O"
+        }, 500)
+        return 1;
+    }
+    else if (BL === "X" && BR === "X" && BM != "O") {
+        setTimeout(() => {
+            bottomMidSymbol.textContent = "O"
+            bottomMidSymbol.style.color = "red"
+            o++;
+            BM = "O"
+        }, 500)
+        return 1;
+    }
+    else if (TM === "X" && MM === "X" && BM != "O") {
+        setTimeout(() => {
+            bottomMidSymbol.textContent = "O"
+            bottomMidSymbol.style.color = "red"
+            o++;
+            BM = "O"
+        }, 500)
+        return 1;
+    }
+    else if (BL === "X" && BM === "X" && BR != "O") {
+        setTimeout(() => {
+            bottomRightSymbol.textContent = "O"
+            bottomRightSymbol.style.color = "red"
+            o++;
+            BR = "O"
+        }, 500)
+        return 1;
+    }
+    else if (TR === "X" && MR === "X" && BR != "O") {
+        setTimeout(() => {
+            bottomRightSymbol.textContent = "O"
+            bottomRightSymbol.style.color = "red"
+            o++;
+            BR = "O"
+        }, 500)
+        return 1;
+    }
+    else if (TL === "X" && MM === "X" && BR != "O") {
+        setTimeout(() => {
+            bottomRightSymbol.textContent = "O"
+            bottomRightSymbol.style.color = "red"
+            o++;
+            BR = "O"
+        }, 500)
+        return 1;
+    }
 }
